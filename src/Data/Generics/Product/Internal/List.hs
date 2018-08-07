@@ -40,6 +40,9 @@ module Data.Generics.Product.Internal.List
   , TupleToList
   ) where
 
+#if __GLASGOW_HASKELL__ < 804
+import Data.Semigroup
+#endif
 import GHC.TypeLits
 
 import Data.Kind    (Type)
