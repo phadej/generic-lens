@@ -41,7 +41,6 @@ module Data.Generics.Product.Internal.List
   ) where
 
 import GHC.TypeLits
-import Data.Semigroup
 
 import Data.Kind    (Type)
 import GHC.Generics
