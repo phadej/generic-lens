@@ -5,7 +5,18 @@ packages:
 
 optional-packages:
   optics-test/*.cabal
-  optics/indexed-profunctors/*.cabal
-  optics/optics-core/*.cabal
 
 write-ghc-environment-files: always
+
+-- Until indexed-profunctors is on Hackage
+source-repository-package
+  type: git
+  location: https://github.com/well-typed/optics.git
+  tag: ee041dc3f5b8451db6ac3165ba39f057afb9cdf2
+  subdir: indexed-profunctors
+
+source-repository-package
+  type: git
+  location: https://github.com/well-typed/optics.git
+  tag: ee041dc3f5b8451db6ac3165ba39f057afb9cdf2
+  subdir: optics-core
